@@ -206,23 +206,43 @@ form {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-  .search-result {
-      width: 45%;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .search-result {
       width: 100%;
   }
 
   form {
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   #search-input {
       margin-bottom: 10px;
       width: 85%;
+  }
+  h1{
+    font-size: 30px;
+    padding: 30px 0;
+  }
+
+  .home {
+    width: 24px;
+    height: auto;
+    transition: transform 0.3s ease-in-out; 
+  }
+
+  .logo img {
+    width: 60px;
+    height: auto;
+  }
+
+  #suggestions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); 
+    gap: 20px;
+    justify-content: center; 
+    max-width: 1200px; 
+    margin: 20px auto;
+    padding: 20px;
   }
 }
