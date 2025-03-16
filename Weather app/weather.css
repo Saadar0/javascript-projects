@@ -1,0 +1,305 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px black solid;
+    align-items: center;
+    margin: 10px 40px;
+    padding: 0;
+    height: 100px;
+}
+
+header a{
+    color: black;
+    font-size: 18px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header a:hover{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#links{
+    display: flex;
+    gap: 30px;
+}
+
+#links a{
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.5s;
+}
+
+#links a:hover{
+    transform:scale(1.03)
+}
+
+#app_name{
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center
+}
+
+#search-button{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px; 
+    margin-right: 10px; 
+    height: 50px;
+    cursor: pointer;
+    background-color: hsl(260, 5%, 12%);
+    border-color: hsl(260, 5%, 12%);
+    border-radius: 5px;
+    color: hsl(249, 58%, 95%);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#search-button:hover{
+    background-color: hsl(250, 4%, 30%);
+    border-color: hsl(250, 4%, 30%);
+}
+
+#search-input{
+    font-size: 18px;
+    margin: 0;
+    width: 400px;
+    height: 45px;
+    background-color: hsl(249, 58%, 95%);
+    border-color: hsl(260, 5%, 12%);
+    border-radius: 5px;
+    color: hsl(249, 21%, 24%);
+    cursor: text;
+}
+
+#search-input:focus{
+    background-color: hsl(260, 5%, 12%);
+    color:hsl(249, 58%, 95%);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#weather_output{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+}
+
+#logo_temp_container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+#iconW{
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top:80px ;
+    
+}
+
+#location{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#coord, #chance_rain{
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0.5;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed black;
+    padding: 0px 20px 20px 20px;
+}
+
+#temp{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 80px;
+    color: #f18969;
+}
+
+#tempo{
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 180px;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    height: 100px;
+}
+
+#description{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#details p {
+    font-size: 26px;
+}
+
+#infos{
+    border-bottom: 1px dashed black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+}
+
+#icon{
+    height: 50px;
+    width: 50px;
+    margin: 0;
+}
+
+#output{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #f8f8f8;
+    backdrop-filter: blur(12px);
+    border-radius: 5px;
+    font-size: 28px;
+    margin-bottom: 5px;
+    width: 700px;
+}
+
+#title{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.footer {
+    border-top: 1px black solid;
+    color: black;
+    text-align: center;
+    margin: 10px 40px;
+    padding: 10px;
+    height: 40px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgb(7, 129, 185);
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px black solid;
+        align-items: center;
+        margin: 10px 40px;
+        padding: 0;
+        height: 100px;
+    }
+    
+    header a{
+        color: black;
+        font-size: 8px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    header a:hover{
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    
+    #links{
+        display: flex;
+        gap: 20px;
+    }
+    
+    #links a{
+        text-decoration: none;
+        font-size: 14px;
+        transition: transform 0.5s;
+    }
+    
+    #links a:hover{
+        transform:scale(1.03)
+    }
+    
+    #app_name{
+        font-size: 44px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center
+    }
+    
+    #search-button{
+        font-size: 10px;
+        font-weight: bold;
+        padding: 5px 5px; 
+        margin-right: 10px; 
+        height: 35px;
+        cursor: pointer;
+        background-color: hsl(260, 5%, 12%);
+        border-color: hsl(260, 5%, 12%);
+        border-radius: 5px;
+        color: hsl(249, 58%, 95%);
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    #search-button:hover{
+        background-color: hsl(250, 4%, 30%);
+        border-color: hsl(250, 4%, 30%);
+    }
+    
+    #search-input{
+        font-size: 10px;
+        margin: 0;
+        width: 300px;
+        height: 30px;
+        background-color: hsl(249, 58%, 95%);
+        border-color: hsl(260, 5%, 12%);
+        border-radius: 5px;
+        color: hsl(249, 21%, 24%);
+        cursor: text;
+    }
+    
+    #search-input:focus{
+        background-color: hsl(260, 5%, 12%);
+        color:hsl(249, 58%, 95%);
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+    
+}

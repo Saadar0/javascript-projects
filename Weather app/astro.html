@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy</title>
+    <link rel="stylesheet" href="astro.css">
+</head>
+<body>
+    <header>
+        <p id="app_name">WEATHER APP</p>
+        
+        <span id="links">
+            <a href="weather.html">Home</a>
+            <a href="#">Astronomy</a>
+            <a href="about.html">About us</a>
+        </span>
+        
+        <span id="search">
+            <input id="search-input" type="text" placeholder="Enter a city...">
+            <button id="search-button">search</button>
+        </span>
+    </header>
+    <p id="location"></p>
+
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <main>
+
+        <div id="facts_box">
+            <h3 id="title">✨ Did You Know?</h3>
+            <p id="astro_fact">Loading...</p>
+        </div>
+
+        <div class="container">
+            <div id="solar_lunar">
+                <h3 id="title">☀️ Solar & Lunar Data</h3>
+                <p id="time"><strong>Sunrise:</strong> <span id="sunrise_time">-</span></p>
+                <p id="time"><strong>Sunset:</strong> <span id="sunset_time">-</span></p>
+                <p id="time"><strong>Moonrise:</strong> <span id="moonrise_time">-</span></p>
+                <p id="time"><strong>Moonset:</strong> <span id="moonset_time">-</span></p>
+            </div>
+              <div id="moon_phase"> 
+                <h3 id="title">🌙 Moon Phase Tracker</h3>
+                <p><strong>Current Moon Phase:</strong></p>
+                <img id="phase_img" src="">
+                <div id="moon-phase-image"></div>
+            </div>
+        </div>
+
+        <div class="images">
+            <img id="moon_img" src="moon_phases/new.png">
+            <img id="moon_img" src="moon_phases/Waxing-crescent.png">
+            <img id="moon_img" src="moon_phases/first_quarter.png">
+            <img id="moon_img" src="moon_phases/Waxing-gibbous.png">
+            <img id="moon_img" src="moon_phases/full.png">
+            <img id="moon_img" src="moon_phases/Waning-gibbous.png">
+            <img id="moon_img" src="moon_phases/third_quarter.png">
+            <img id="moon_img" src="moon_phases/Waning-crescent.png">
+          </div> 
+
+        </div>
+    </main>
+    <p id="error-message" style="color: red;"></p>
+    <footer class="footer">
+        <p>Created by <a href="#">Saad</a> | Powered by <a href="https://www.weatherapi.com/" target="_blank">weather API</a></p>
+    </footer>
+
+    <script src="astro.js"></script>
+</body>
+</html>

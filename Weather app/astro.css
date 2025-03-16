@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px black solid;
+    align-items: center;
+    margin: 10px 40px;
+    padding: 0;
+    height: 100px;
+}
+
+header a {
+    color: black;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header a:hover {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#links{
+    display: flex;
+    gap: 30px;
+}
+
+#links a{
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.5s;
+}
+
+#links a:hover{
+    transform:scale(1.03)
+}
+
+#app_name {
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+#search-button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin-right: 10px;
+    height: 50px;
+    cursor: pointer;
+    background-color: hsl(260, 5%, 12%);
+    border-color: hsl(260, 5%, 12%);
+    border-radius: 5px;
+    color: hsl(249, 58%, 95%);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#search-button:hover {
+    background-color: hsl(250, 4%, 30%);
+    border-color: hsl(250, 4%, 30%);
+}
+
+#search-input {
+    font-size: 18px;
+    margin: 0;
+    width: 400px;
+    height: 45px;
+    background-color: hsl(249, 58%, 95%);
+    border-color: hsl(260, 5%, 12%);
+    border-radius: 5px;
+    color: hsl(249, 21%, 24%);
+    cursor: text;
+}
+
+#search-input:focus {
+    background-color: hsl(260, 5%, 12%);
+    color: hsl(249, 58%, 95%);
+}
+
+#location {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0px 0px 150px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 150px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#solar_lunar ,#moon_phase{
+    margin-top: 0;
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+#facts_box {
+    width: 100%;
+    margin-top: 0;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#astro_fact {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#title {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#moon_img {
+    height: 150px;
+    width: 150px;
+}
+
+.images {
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#phase_img {
+    display: flex;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+#time {
+    font-size: 24px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#moon_phase p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.footer {
+    border-top: 1px black solid;
+    color: black;
+    text-align: center;
+    margin: 10px 40px;
+    padding: 10px;
+    height: 40px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgb(7, 129, 185);
+}
+
+@media screen and (max-width: 1200px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px black solid;
+        align-items: center;
+        margin: 10px 40px;
+        padding: 0;
+        height: 100px;
+    }
+    
+    header a{
+        color: black;
+        font-size: 8px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    header a:hover{
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    
+    #links{
+        display: flex;
+        gap: 20px;
+    }
+    
+    #links a{
+        text-decoration: none;
+        font-size: 14px;
+        transition: transform 0.5s;
+    }
+    
+    #links a:hover{
+        transform:scale(1.03)
+    }
+    
+    #app_name{
+        font-size: 44px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center
+    }
+    
+    #search-button{
+        font-size: 10px;
+        font-weight: bold;
+        padding: 5px 5px; 
+        margin-right: 10px; 
+        height: 35px;
+        cursor: pointer;
+        background-color: hsl(260, 5%, 12%);
+        border-color: hsl(260, 5%, 12%);
+        border-radius: 5px;
+        color: hsl(249, 58%, 95%);
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    #search-button:hover{
+        background-color: hsl(250, 4%, 30%);
+        border-color: hsl(250, 4%, 30%);
+    }
+    
+    #search-input{
+        font-size: 10px;
+        margin: 0;
+        width: 300px;
+        height: 30px;
+        background-color: hsl(249, 58%, 95%);
+        border-color: hsl(260, 5%, 12%);
+        border-radius: 5px;
+        color: hsl(249, 21%, 24%);
+        cursor: text;
+    }
+    
+    #search-input:focus{
+        background-color: hsl(260, 5%, 12%);
+        color:hsl(249, 58%, 95%);
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 100px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    #moon_img {
+        height: 120px;
+        width: 120px;
+    }
+}

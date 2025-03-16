@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="weather.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <p id="app_name">WEATHER APP</p>
+            
+            <span id="links">
+                <a href="#">Home</a>
+                <a href="astro.html">Astronomy</a>
+                <a href="about.html">About us</a>
+            </span>
+            
+            <span id="search">
+                <input id="search-input" type="text" placeholder="Enter a city...">
+                <button id="search-button">search</button>
+            </span>
+    </header>
+    <main>
+
+        <section id="weather_output">
+            <span id="logo_temp_container">
+                <div id="weather">
+                    <span>
+                        <p id="location"></p>
+                        <p id="coord"></p>
+                    </span>
+                    <span id="tempo">
+                        <p id="temp"></p>
+                    </span>
+                    <span>
+                        <p id="description"></p>
+                        <p id="chance_rain"></p>
+                    </span>
+                </div>
+       
+                <div id="logo_container">
+                   <img id="iconW" src="">
+                </div>
+            </span>
+        
+            <div id="details">
+
+                <span id="infos">
+                    <p id="feels_like"></p>
+                    <p id="Humidity"></p>
+                </span>
+                <span id="infos">
+                    <p id="Uv_index"></p>
+                    <p id="dewpoint"></p>
+                </span>
+                <span id="infos">
+                    <p id="wind"></p>
+                    <p id="pressure"></p>
+                </span>
+                
+            </div>
+        </section>
+    
+        <section id="forecast_output"></section>
+    </main>
+
+    <footer class="footer">
+        <p>Created by <a href="#">Saad </a> | Powered by <a href="https://www.weatherapi.com/" target="_blank">weather API</a></p>
+    </footer>
+   <script src="weather.js"></script>
+</body>
+</html>
